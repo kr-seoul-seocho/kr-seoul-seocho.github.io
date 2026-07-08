@@ -117,35 +117,232 @@
   ]
 }
   </script>
-  <style>
-:root { --fg:#1a1a2e; --muted:#5c5c72; --accent:#2d5bff; --bg:#ffffff; --card:#f6f7fb; --line:#e6e8f0; }
-* { box-sizing: border-box; }
-body { margin:0; font-family: -apple-system, BlinkMacSystemFont, "Apple SD Gothic Neo", "Malgun Gothic", sans-serif; color:var(--fg); background:var(--bg); line-height:1.7; }
-main { max-width: 760px; margin: 0 auto; padding: 2rem 1.25rem 4rem; }
-header { padding: 2rem 0 1rem; border-bottom: 2px solid var(--line); margin-bottom: 1.5rem; }
-.eyebrow { color: var(--accent); font-weight: 600; margin: 0 0 .25rem; letter-spacing: .02em; }
-h1 { font-size: 2.4rem; margin: 0; }
-h2 { font-size: 1.25rem; margin: 2rem 0 .5rem; padding-left: .6rem; border-left: 4px solid var(--accent); }
-section p { margin: .25rem 0 0; }
-ul { margin: .5rem 0 0; padding-left: 1.2rem; }
-li { margin: .25rem 0; }
-.facts, .symbols { list-style: none; padding: 1rem 1.2rem; background: var(--card); border-radius: 12px; }
-.faq details { border: 1px solid var(--line); border-radius: 10px; padding: .5rem .9rem; margin: .5rem 0; }
-.faq summary { cursor: pointer; font-weight: 600; }
-.faq details p { margin: .5rem 0 .25rem; color: var(--muted); }
-.sources { font-size: .9rem; color: var(--muted); }
-a { color: var(--accent); }
-footer { margin-top: 3rem; padding-top: 1rem; border-top: 1px solid var(--line); color: var(--muted); font-size: .85rem; }
-</style>
+  <script id="region-data" type="application/json">
+{
+  "characteristics": "서초구의 인구는 2022년 기준 약 40만 명으로, 면적은 서울에서 가장 넓지만 산림 녹지 비중이 커 인구 밀도는 상대적으로 낮은 편입니다. 서초동 법조타운을 중심으로 대법원·대검찰청과 다수의 법무법인이 밀집해 국내 법률 산업의 심장부 역할을 하며, 세무·회계·특허 등 전문 서비스업이 함께 발달했습니다. 강남역 일대 관할의 절반이 서초동에 속해 대형 오피스와 학원가, 상업시설이 집중되어 있고, 양재동과 우면동에는 삼성·현대차그룹 등 대기업의 연구개발 시설이 자리해 R\u0026D 거점으로 부상했습니다. 반포동과 잠원동의 대규모 재건축 아파트 단지는 전국에서 손꼽히는 고가 주거지로 꼽히며, 방배동과 서래마을은 국제적이고 문화적인 주거·상권 색채를 띱니다. 예술의전당과 국립국악원이 있어 공연예술·문화 소비가 활발한 것도 서초구를 규정하는 특징입니다.",
+  "coords": {
+    "lat": 37.4837,
+    "lng": 127.0324
+  },
+  "cultural_heritage": [
+    {
+      "description": "우면산 자락 예술의전당 옆에 자리한 국악 전문 국립기관으로, 정악·민속악 등 전통음악과 궁중무용을 보존·공연·교육합니다. 우면당과 예악당 등 전용 공연장에서 국악 공연이 상시 열립니다.",
+      "name": "국립국악원"
+    },
+    {
+      "description": "내곡동에 있는 조선 왕릉으로, 조선 3대 태종과 원경왕후의 헌릉, 23대 순조와 순원왕후의 인릉이 함께 자리한 유네스코 세계유산 조선왕릉입니다. 울창한 숲과 능침을 따라 왕실 역사를 걷는 산책로가 조성되어 있습니다.",
+      "name": "헌인릉"
+    },
+    {
+      "description": "양재 매헌시민의숲 내에 있는 기념관으로, 상하이 훙커우공원 의거로 순국한 매헌 윤봉길 의사의 유품과 항일 독립운동 자료를 전시합니다. 의사의 호 '매헌'을 따 공원과 기념관 이름이 붙었습니다.",
+      "name": "매헌 윤봉길의사 기념관"
+    },
+    {
+      "description": "예술의전당·국립국악원과 인접한 국립 예술 특수대학으로, 음악·연극·영상·무용·미술·전통예술 원(院)을 두고 전문 예술인을 양성합니다. 서초구 예술 클러스터의 교육 축을 담당합니다.",
+      "name": "한국예술종합학교 서초캠퍼스"
+    }
+  ],
+  "faq": [
+    {
+      "answer": "옛 지명 '서리풀'을 향찰식으로 옮긴 것으로, '서리'의 음에서 상서로울 서(瑞) 자를, '풀'의 훈에서 풀 초(草) 자를 따 지었습니다. 구청이 있는 서초동에서 구 이름을 가져왔습니다.",
+      "question": "서초구라는 이름은 어디서 유래했나요?"
+    },
+    {
+      "answer": "1988년 1월 1일 강남구에서 분리되어 신설되었습니다. 강남 개발로 인구가 급증하면서 별도 자치구로 분구되었습니다.",
+      "question": "서초구는 언제 생겼나요?"
+    },
+    {
+      "answer": "네, 서초구의 면적은 약 47㎢로 서울 25개 자치구 가운데 가장 넓습니다. 우면산·청계산 등 남부 산림 녹지가 넓게 포함되어 있기 때문입니다.",
+      "question": "서초구가 서울에서 가장 넓은 자치구인가요?"
+    },
+    {
+      "answer": "예술의전당과 국립국악원, 한국예술종합학교가 우면산 자락에 모여 서울을 대표하는 공연·예술 클러스터를 이룹니다. 오페라·클래식·전시·국악 공연이 연중 열립니다.",
+      "question": "서초구를 대표하는 문화시설은 무엇인가요?"
+    },
+    {
+      "answer": "반포동과 방배동에 걸친 서래마을에 국내 최대의 프랑스인 공동체가 형성되어 프랑스학교와 프랑스풍 상점·카페가 모여 있기 때문입니다. 이국적인 분위기의 카페거리로도 유명합니다.",
+      "question": "서래마을은 왜 '작은 프랑스'로 불리나요?"
+    },
+    {
+      "answer": "서초구청은 서울특별시 서초구 남부순환로 2584(서초동)에 있습니다. 지하철 2호선 서초역이나 2·3호선 교대역에서 가깝습니다.",
+      "question": "서초구청은 어디에 있고 어떻게 가나요?"
+    }
+  ],
+  "geography_nature": "서초구는 서울 남부 한강 이남의 중앙에 자리하며, 동쪽으로 강남대로를 경계로 강남구와, 서쪽으로 동작대로를 사이에 두고 동작구·관악구와 접합니다. 북쪽 경계는 한강이 흐르며 용산구를 마주하고, 남쪽으로는 우면산과 청계산·인릉산 등 산악지대를 넘어 경기도 과천시와 성남시에 이릅니다. 구의 남부에는 우면산과 구룡산이, 남단에는 청계산 능선이 뻗어 서울에서도 손꼽히는 산림 녹지를 품고 있습니다. 도심을 관통하는 양재천이 우면동과 양재동을 지나 한강으로 흘러들고, 반포천은 서초동 일대를 지나 반포 앞 한강에 합류합니다. 남고북저의 지형을 이루어 남쪽 산자락에서 북쪽 한강변으로 완만히 낮아지며, 이 물길과 산세가 서초구 특유의 녹지 축을 형성합니다.",
+  "history": "서초라는 이름은 '서리풀'을 향찰식으로 옮긴 것으로, '서리'의 음에서 상서로울 서(瑞) 자를, '풀'의 훈에서 풀 초(草) 자를 따 붙인 지명이며 옛 문헌에는 상초(箱草)로도 기록되었습니다. 조선 시대 이 일대는 경기도 광주군과 과천군에 속한 농촌 지대였고, 태종과 순조의 능인 헌인릉이 내곡동에 조성되면서 왕실과 인연을 맺었습니다. 1963년 서울시가 한강 이남으로 크게 확장되면서 이 지역이 서울 행정구역으로 편입되었습니다. 이후 강남 개발과 함께 인구가 급증하자 1988년 1월 1일 강남구에서 분리되어 서초구가 신설되었으며, 구청 소재지인 서초동에서 구 이름을 따왔습니다. 1988년 예술의전당 음악당 개관, 1990년대 법조단지 이전, 2000년대 이후 반포·잠원 재건축을 거치며 오늘날의 모습으로 성장했습니다.",
+  "intro": "서초구는 옛 지명 '서리풀'에서 이름을 얻은 서울 한강 이남 중앙부의 자치구로, 대법원·대검찰청·서울중앙지방법원이 한데 모인 법조타운과 삼성전자 서초사옥, 강남역 상권이 공존하는 곳입니다. 예술의전당과 국립국악원, 한국예술종합학교가 이웃해 자리 잡아 서울을 대표하는 공연·예술 클러스터를 이룹니다. 반포동과 방배동 서래마을에는 국내 최대의 프랑스인 거주 지역이 형성되어 '서울 속 작은 프랑스'로 불립니다. 면적 약 47㎢로 서울 25개 자치구 가운데 가장 넓으며, 우면산과 청계산 자락의 녹지와 반포한강공원의 수변 경관이 도심 고밀 개발지와 어우러집니다. 서초동 법조단지, 반포·잠원의 대규모 재건축 아파트, 양재 R\u0026D 벨트가 각기 다른 도시 표정을 만들어 냅니다.",
+  "landmarks": [
+    {
+      "description": "1988년 음악당과 서예관을 시작으로 개관한 국내 대표 복합 예술센터로, 오페라하우스·콘서트홀·한가람미술관·서예박물관을 갖추고 연간 수백만 명이 찾습니다. 우면산 자락에 자리해 클래식·오페라·전시가 연중 이어지는 서초구의 문화 랜드마크입니다.",
+      "name": "예술의전당"
+    },
+    {
+      "description": "대법원과 대검찰청, 서울중앙지방법원·서울고등법원, 서울중앙지방검찰청이 한데 모인 국내 최대 법조단지입니다. 이를 중심으로 수많은 법무법인과 법률 서비스업이 집적해 서초구를 대한민국 법률의 중심지로 만들었습니다.",
+      "name": "서초동 법조타운"
+    },
+    {
+      "description": "강남역 사거리 인근 서초대로에 들어선 초고층 마천루 단지로, 오랜 기간 삼성그룹 주요 계열사의 상징적 거점이었습니다. 강남역 상권과 맞닿아 서초구 도심의 스카이라인을 대표하는 랜드마크입니다.",
+      "name": "삼성전자 서초사옥(삼성타운)"
+    },
+    {
+      "description": "반포동에 위치한 전국 규모의 고속·시외버스 교통 관문으로, 경부선 터미널과 호남선 센트럴시티가 함께 자리합니다. 신세계백화점 강남점과 대형 상업시설이 결합해 교통과 쇼핑이 어우러진 거점입니다.",
+      "name": "서울고속버스터미널·센트럴시티"
+    }
+  ],
+  "nature_rest": [
+    {
+      "description": "한강변 반포동에 조성된 대표 수변 공원으로, 인공섬 세빛섬과 세계 최장 교량 분수인 반포대교 달빛무지개분수로 널리 알려졌습니다. 자전거길과 잔디밭, 야간 경관이 어우러져 시민들의 휴식처가 됩니다.",
+      "name": "반포한강공원"
+    },
+    {
+      "description": "서초동·반포동·방배동에 걸친 초대형 도심 녹지로, 누에다리를 통해 서리풀공원과 몽마르뜨공원이 이어집니다. 도심 속 숲길을 걸으며 산책과 문화 여행을 즐길 수 있는 서초의 대표 녹지 축입니다.",
+      "name": "서리풀공원과 몽마르뜨공원"
+    },
+    {
+      "description": "1986년 우리나라 최초로 숲 개념을 도입해 조성된 공원으로, 70여 종 25만여 그루의 나무가 우거진 도심 숲입니다. 잔디광장과 체육시설, 윤봉길의사 기념관을 갖춰 사계절 시민들이 즐겨 찾습니다.",
+      "name": "매헌시민의숲(양재시민의숲)"
+    },
+    {
+      "description": "구 남부에 솟은 우면산은 소망탑과 완만한 등산로를 갖춰 접근성이 좋은 도심 산이며, 양재천을 따라 이어지는 물가 산책로는 벚꽃길과 자전거길로 사랑받습니다. 산과 하천이 연결되는 서초구의 대표적 휴식 공간입니다.",
+      "name": "우면산과 양재천 산책로"
+    }
+  ],
+  "org_slug": "kr-seoul-seocho",
+  "sido": "서울특별시",
+  "sigungu": "서초구",
+  "symbols": {
+    "bird": "비둘기",
+    "flower": "장미",
+    "tree": "느티나무"
+  },
+  "transport": "서초구에는 서울 지하철 2·3·4·7·9호선과 신분당선이 지나며, 과천선으로 이어지는 4호선을 통해 경기 남부와도 연결됩니다. 강남역과 교대역, 서초역, 방배역, 양재역, 고속터미널역, 반포역 등 유동 인구가 많은 환승·거점역이 촘촘히 분포합니다. 특히 강남역은 2호선과 신분당선이 만나 서울에서 가장 붐비는 역 중 하나이며, 고속터미널역은 3·7·9호선이 교차하는 대형 환승역입니다. 도로는 강남대로와 동작대로가 남북을 잇고, 남부순환로와 서초대로·양재대로가 동서 교통을 담당합니다. 반포동의 서울고속버스터미널과 센트럴시티(호남선)는 전국을 잇는 광역 버스 교통의 관문 역할을 합니다. 경부고속도로 서울 기점이 양재 나들목 인근에 있어 수도권 남부로의 접근성도 뛰어납니다."
+}
+  </script>
 </head>
 <body>
-  <main>
-    <header>
-      <p class="eyebrow">서울특별시</p>
-      <h1>서초구</h1>
-    </header>
-    <div class="content">
-      <section id="intro">
+<!-- 서초구 전용 템플릿 — "선율의 구(區)" 커서 궤적 파티클/선율선 캔버스.
+     서리풀에서 이름을 얻고 예술의전당·국립국악원이 이웃한 서초의 감성을,
+     마우스 궤적을 따라 흐르는 우아한 선율선과 파티클로 표현합니다.
+           <section id="intro">
+        <h2>지역 소개</h2>
+        <p>서초구는 옛 지명 &#x27;서리풀&#x27;에서 이름을 얻은 서울 한강 이남 중앙부의 자치구로, 대법원·대검찰청·서울중앙지방법원이 한데 모인 법조타운과 삼성전자 서초사옥, 강남역 상권이 공존하는 곳입니다. 예술의전당과 국립국악원, 한국예술종합학교가 이웃해 자리 잡아 서울을 대표하는 공연·예술 클러스터를 이룹니다. 반포동과 방배동 서래마을에는 국내 최대의 프랑스인 거주 지역이 형성되어 &#x27;서울 속 작은 프랑스&#x27;로 불립니다. 면적 약 47㎢로 서울 25개 자치구 가운데 가장 넓으며, 우면산과 청계산 자락의 녹지와 반포한강공원의 수변 경관이 도심 고밀 개발지와 어우러집니다. 서초동 법조단지, 반포·잠원의 대규모 재건축 아파트, 양재 R&amp;D 벨트가 각기 다른 도시 표정을 만들어 냅니다.</p>
+      </section>
+      <section id="facts">
+        <h2>주요 통계</h2>
+        <ul class="facts">
+          <li>인구: 약 404,704명 (2022)</li>
+          <li>면적: 47 km²</li>
+          <li>신설: 1988-01-01</li>
+        </ul>
+      </section>
+      <section id="history">
+        <h2>역사</h2>
+        <p>서초라는 이름은 &#x27;서리풀&#x27;을 향찰식으로 옮긴 것으로, &#x27;서리&#x27;의 음에서 상서로울 서(瑞) 자를, &#x27;풀&#x27;의 훈에서 풀 초(草) 자를 따 붙인 지명이며 옛 문헌에는 상초(箱草)로도 기록되었습니다. 조선 시대 이 일대는 경기도 광주군과 과천군에 속한 농촌 지대였고, 태종과 순조의 능인 헌인릉이 내곡동에 조성되면서 왕실과 인연을 맺었습니다. 1963년 서울시가 한강 이남으로 크게 확장되면서 이 지역이 서울 행정구역으로 편입되었습니다. 이후 강남 개발과 함께 인구가 급증하자 1988년 1월 1일 강남구에서 분리되어 서초구가 신설되었으며, 구청 소재지인 서초동에서 구 이름을 따왔습니다. 1988년 예술의전당 음악당 개관, 1990년대 법조단지 이전, 2000년대 이후 반포·잠원 재건축을 거치며 오늘날의 모습으로 성장했습니다.</p>
+      </section>
+      <section id="geography">
+        <h2>지리·자연환경</h2>
+        <p>서초구는 서울 남부 한강 이남의 중앙에 자리하며, 동쪽으로 강남대로를 경계로 강남구와, 서쪽으로 동작대로를 사이에 두고 동작구·관악구와 접합니다. 북쪽 경계는 한강이 흐르며 용산구를 마주하고, 남쪽으로는 우면산과 청계산·인릉산 등 산악지대를 넘어 경기도 과천시와 성남시에 이릅니다. 구의 남부에는 우면산과 구룡산이, 남단에는 청계산 능선이 뻗어 서울에서도 손꼽히는 산림 녹지를 품고 있습니다. 도심을 관통하는 양재천이 우면동과 양재동을 지나 한강으로 흘러들고, 반포천은 서초동 일대를 지나 반포 앞 한강에 합류합니다. 남고북저의 지형을 이루어 남쪽 산자락에서 북쪽 한강변으로 완만히 낮아지며, 이 물길과 산세가 서초구 특유의 녹지 축을 형성합니다.</p>
+      </section>
+      <section id="characteristics">
+        <h2>지역 특징</h2>
+        <p>서초구의 인구는 2022년 기준 약 40만 명으로, 면적은 서울에서 가장 넓지만 산림 녹지 비중이 커 인구 밀도는 상대적으로 낮은 편입니다. 서초동 법조타운을 중심으로 대법원·대검찰청과 다수의 법무법인이 밀집해 국내 법률 산업의 심장부 역할을 하며, 세무·회계·특허 등 전문 서비스업이 함께 발달했습니다. 강남역 일대 관할의 절반이 서초동에 속해 대형 오피스와 학원가, 상업시설이 집중되어 있고, 양재동과 우면동에는 삼성·현대차그룹 등 대기업의 연구개발 시설이 자리해 R&amp;D 거점으로 부상했습니다. 반포동과 잠원동의 대규모 재건축 아파트 단지는 전국에서 손꼽히는 고가 주거지로 꼽히며, 방배동과 서래마을은 국제적이고 문화적인 주거·상권 색채를 띱니다. 예술의전당과 국립국악원이 있어 공연예술·문화 소비가 활발한 것도 서초구를 규정하는 특징입니다.</p>
+      </section>
+      <section id="landmarks">
+        <h2>대표 명소</h2>
+        <ul>
+          <li><strong>예술의전당</strong> — 1988년 음악당과 서예관을 시작으로 개관한 국내 대표 복합 예술센터로, 오페라하우스·콘서트홀·한가람미술관·서예박물관을 갖추고 연간 수백만 명이 찾습니다. 우면산 자락에 자리해 클래식·오페라·전시가 연중 이어지는 서초구의 문화 랜드마크입니다.</li>
+          <li><strong>서초동 법조타운</strong> — 대법원과 대검찰청, 서울중앙지방법원·서울고등법원, 서울중앙지방검찰청이 한데 모인 국내 최대 법조단지입니다. 이를 중심으로 수많은 법무법인과 법률 서비스업이 집적해 서초구를 대한민국 법률의 중심지로 만들었습니다.</li>
+          <li><strong>삼성전자 서초사옥(삼성타운)</strong> — 강남역 사거리 인근 서초대로에 들어선 초고층 마천루 단지로, 오랜 기간 삼성그룹 주요 계열사의 상징적 거점이었습니다. 강남역 상권과 맞닿아 서초구 도심의 스카이라인을 대표하는 랜드마크입니다.</li>
+          <li><strong>서울고속버스터미널·센트럴시티</strong> — 반포동에 위치한 전국 규모의 고속·시외버스 교통 관문으로, 경부선 터미널과 호남선 센트럴시티가 함께 자리합니다. 신세계백화점 강남점과 대형 상업시설이 결합해 교통과 쇼핑이 어우러진 거점입니다.</li>
+        </ul>
+      </section>
+      <section id="heritage">
+        <h2>문화유산·문화시설</h2>
+        <ul>
+          <li><strong>국립국악원</strong> — 우면산 자락 예술의전당 옆에 자리한 국악 전문 국립기관으로, 정악·민속악 등 전통음악과 궁중무용을 보존·공연·교육합니다. 우면당과 예악당 등 전용 공연장에서 국악 공연이 상시 열립니다.</li>
+          <li><strong>헌인릉</strong> — 내곡동에 있는 조선 왕릉으로, 조선 3대 태종과 원경왕후의 헌릉, 23대 순조와 순원왕후의 인릉이 함께 자리한 유네스코 세계유산 조선왕릉입니다. 울창한 숲과 능침을 따라 왕실 역사를 걷는 산책로가 조성되어 있습니다.</li>
+          <li><strong>매헌 윤봉길의사 기념관</strong> — 양재 매헌시민의숲 내에 있는 기념관으로, 상하이 훙커우공원 의거로 순국한 매헌 윤봉길 의사의 유품과 항일 독립운동 자료를 전시합니다. 의사의 호 &#x27;매헌&#x27;을 따 공원과 기념관 이름이 붙었습니다.</li>
+          <li><strong>한국예술종합학교 서초캠퍼스</strong> — 예술의전당·국립국악원과 인접한 국립 예술 특수대학으로, 음악·연극·영상·무용·미술·전통예술 원(院)을 두고 전문 예술인을 양성합니다. 서초구 예술 클러스터의 교육 축을 담당합니다.</li>
+        </ul>
+      </section>
+      <section id="nature">
+        <h2>자연·휴식</h2>
+        <ul>
+          <li><strong>반포한강공원</strong> — 한강변 반포동에 조성된 대표 수변 공원으로, 인공섬 세빛섬과 세계 최장 교량 분수인 반포대교 달빛무지개분수로 널리 알려졌습니다. 자전거길과 잔디밭, 야간 경관이 어우러져 시민들의 휴식처가 됩니다.</li>
+          <li><strong>서리풀공원과 몽마르뜨공원</strong> — 서초동·반포동·방배동에 걸친 초대형 도심 녹지로, 누에다리를 통해 서리풀공원과 몽마르뜨공원이 이어집니다. 도심 속 숲길을 걸으며 산책과 문화 여행을 즐길 수 있는 서초의 대표 녹지 축입니다.</li>
+          <li><strong>매헌시민의숲(양재시민의숲)</strong> — 1986년 우리나라 최초로 숲 개념을 도입해 조성된 공원으로, 70여 종 25만여 그루의 나무가 우거진 도심 숲입니다. 잔디광장과 체육시설, 윤봉길의사 기념관을 갖춰 사계절 시민들이 즐겨 찾습니다.</li>
+          <li><strong>우면산과 양재천 산책로</strong> — 구 남부에 솟은 우면산은 소망탑과 완만한 등산로를 갖춰 접근성이 좋은 도심 산이며, 양재천을 따라 이어지는 물가 산책로는 벚꽃길과 자전거길로 사랑받습니다. 산과 하천이 연결되는 서초구의 대표적 휴식 공간입니다.</li>
+        </ul>
+      </section>
+      <section id="transport">
+        <h2>교통</h2>
+        <p>서초구에는 서울 지하철 2·3·4·7·9호선과 신분당선이 지나며, 과천선으로 이어지는 4호선을 통해 경기 남부와도 연결됩니다. 강남역과 교대역, 서초역, 방배역, 양재역, 고속터미널역, 반포역 등 유동 인구가 많은 환승·거점역이 촘촘히 분포합니다. 특히 강남역은 2호선과 신분당선이 만나 서울에서 가장 붐비는 역 중 하나이며, 고속터미널역은 3·7·9호선이 교차하는 대형 환승역입니다. 도로는 강남대로와 동작대로가 남북을 잇고, 남부순환로와 서초대로·양재대로가 동서 교통을 담당합니다. 반포동의 서울고속버스터미널과 센트럴시티(호남선)는 전국을 잇는 광역 버스 교통의 관문 역할을 합니다. 경부고속도로 서울 기점이 양재 나들목 인근에 있어 수도권 남부로의 접근성도 뛰어납니다.</p>
+      </section>
+      <section id="symbols">
+        <h2>지역 상징</h2>
+        <ul class="symbols">
+          <li>구화(꽃): 장미</li>
+          <li>구목(나무): 느티나무</li>
+          <li>구조(새): 비둘기</li>
+        </ul>
+      </section>
+      <section id="faq">
+        <h2>자주 묻는 질문</h2>
+        <div class="faq">
+          <details>
+            <summary>서초구라는 이름은 어디서 유래했나요?</summary>
+            <p>옛 지명 &#x27;서리풀&#x27;을 향찰식으로 옮긴 것으로, &#x27;서리&#x27;의 음에서 상서로울 서(瑞) 자를, &#x27;풀&#x27;의 훈에서 풀 초(草) 자를 따 지었습니다. 구청이 있는 서초동에서 구 이름을 가져왔습니다.</p>
+          </details>
+          <details>
+            <summary>서초구는 언제 생겼나요?</summary>
+            <p>1988년 1월 1일 강남구에서 분리되어 신설되었습니다. 강남 개발로 인구가 급증하면서 별도 자치구로 분구되었습니다.</p>
+          </details>
+          <details>
+            <summary>서초구가 서울에서 가장 넓은 자치구인가요?</summary>
+            <p>네, 서초구의 면적은 약 47㎢로 서울 25개 자치구 가운데 가장 넓습니다. 우면산·청계산 등 남부 산림 녹지가 넓게 포함되어 있기 때문입니다.</p>
+          </details>
+          <details>
+            <summary>서초구를 대표하는 문화시설은 무엇인가요?</summary>
+            <p>예술의전당과 국립국악원, 한국예술종합학교가 우면산 자락에 모여 서울을 대표하는 공연·예술 클러스터를 이룹니다. 오페라·클래식·전시·국악 공연이 연중 열립니다.</p>
+          </details>
+          <details>
+            <summary>서래마을은 왜 &#x27;작은 프랑스&#x27;로 불리나요?</summary>
+            <p>반포동과 방배동에 걸친 서래마을에 국내 최대의 프랑스인 공동체가 형성되어 프랑스학교와 프랑스풍 상점·카페가 모여 있기 때문입니다. 이국적인 분위기의 카페거리로도 유명합니다.</p>
+          </details>
+          <details>
+            <summary>서초구청은 어디에 있고 어떻게 가나요?</summary>
+            <p>서초구청은 서울특별시 서초구 남부순환로 2584(서초동)에 있습니다. 지하철 2호선 서초역이나 2·3호선 교대역에서 가깝습니다.</p>
+          </details>
+        </div>
+      </section>
+      <section id="links">
+        <h2>공식 링크</h2>
+        <ul>
+          <li><a href="https://www.seocho.go.kr/" rel="noopener">서초구청 공식 홈페이지</a></li>
+          <li><a href="https://www.seocho.go.kr/site/seocho/05/10502020000002015070810.jsp" rel="noopener">서초구 위치·면적 안내</a></li>
+        </ul>
+      </section>
+      <section id="sources">
+        <h2>출처</h2>
+        <ul class="sources">
+          <li><a href="https://ko.wikipedia.org/wiki/%EC%84%9C%EC%B4%88%EA%B5%AC" rel="noopener">서초구 - 위키백과, 우리 모두의 백과사전</a> (조회 2026-07-08)</li>
+          <li><a href="https://www.seocho.go.kr/site/seocho/05/10502040100002015070810.jsp" rel="noopener">서초구의 지명유래 - 서초구청</a> (조회 2026-07-08)</li>
+          <li><a href="https://www.seocho.go.kr/site/seocho/05/10502020000002015070810.jsp" rel="noopener">서초구의 위치/면적 - 서초구청</a> (조회 2026-07-08)</li>
+          <li><a href="https://ko.wikipedia.org/wiki/%EC%84%9C%EB%9E%98%EB%A7%88%EC%9D%84" rel="noopener">서래마을 - 위키백과, 우리 모두의 백과사전</a> (조회 2026-07-08)</li>
+        </ul>
+      </section>로 9섹션 실제 텍스트가 DOM에 그대로 들어가 크롤링 가능(SEO-safe),
+     그 위에 캔버스가 progressive-enhancement로 얹힘. JS가 꺼져도 텍스트는 온전히 읽힘. -->
+<canvas id="seocho-trail" aria-hidden="true"></canvas>
+<main class="sc" id="sc-root">
+  <header class="sc-hero">
+    <p class="sc-eyebrow">서울특별시</p>
+    <h1 class="sc-title">서초구</h1>
+    <p class="sc-sub">서리풀에서 시작된 선율의 구(區)</p>
+    <p class="sc-hint" data-jsonly>화면 위로 커서를 움직이면 선율선이 흐릅니다</p>
+    <div class="sc-rule" aria-hidden="true"><span></span></div>
+  </header>
+  <div class="sc-content">
+          <section id="intro">
         <h2>지역 소개</h2>
         <p>서초구는 옛 지명 &#x27;서리풀&#x27;에서 이름을 얻은 서울 한강 이남 중앙부의 자치구로, 대법원·대검찰청·서울중앙지방법원이 한데 모인 법조타운과 삼성전자 서초사옥, 강남역 상권이 공존하는 곳입니다. 예술의전당과 국립국악원, 한국예술종합학교가 이웃해 자리 잡아 서울을 대표하는 공연·예술 클러스터를 이룹니다. 반포동과 방배동 서래마을에는 국내 최대의 프랑스인 거주 지역이 형성되어 &#x27;서울 속 작은 프랑스&#x27;로 불립니다. 면적 약 47㎢로 서울 25개 자치구 가운데 가장 넓으며, 우면산과 청계산 자락의 녹지와 반포한강공원의 수변 경관이 도심 고밀 개발지와 어우러집니다. 서초동 법조단지, 반포·잠원의 대규모 재건축 아파트, 양재 R&amp;D 벨트가 각기 다른 도시 표정을 만들어 냅니다.</p>
       </section>
@@ -253,10 +450,395 @@ footer { margin-top: 3rem; padding-top: 1rem; border-top: 1px solid var(--line);
           <li><a href="https://ko.wikipedia.org/wiki/%EC%84%9C%EB%9E%98%EB%A7%88%EC%9D%84" rel="noopener">서래마을 - 위키백과, 우리 모두의 백과사전</a> (조회 2026-07-08)</li>
         </ul>
       </section>
-    </div>
-    <footer>
-      <p>이 페이지는 공개 자료를 바탕으로 작성된 서초구 지역 정보 페이지입니다.</p>
-    </footer>
-  </main>
+  </div>
+  <footer class="sc-foot">공개 자료를 바탕으로 작성된 서초구 지역 정보 · 서울특별시</footer>
+</main>
+
+<style>
+  :root{
+    --wine:#800020; --wine-deep:#4d0013; --wine-soft:#a83a55;
+    --ivory:#FFFFF0; --ivory-dim:#efe9d8; --ivory-mute:#cbb8b0;
+    --line:rgba(255,255,240,.14); --card:rgba(255,255,240,.045);
+  }
+  @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;700&family=Noto+Serif+KR:wght@400;500;600&display=swap');
+  *{box-sizing:border-box;}
+  html,body{margin:0;}
+  body{
+    background:
+      radial-gradient(1100px 620px at 78% -8%, #5e0018 0%, var(--wine-deep) 46%, #2c000b 100%) fixed;
+    color:var(--ivory-dim);
+    font-family:"KoPubWorld Batang","Noto Serif KR",serif;
+    line-height:1.9; -webkit-font-smoothing:antialiased;
+  }
+  #seocho-trail{position:fixed; inset:0; width:100%; height:100%; pointer-events:none; z-index:0;}
+  .sc{position:relative; z-index:1; max-width:780px; margin:0 auto; padding:0 1.3rem 5rem;}
+
+  .sc-hero{text-align:center; padding:4.4rem 1rem 1.6rem;}
+  .sc-eyebrow{color:var(--wine-soft); letter-spacing:.5em; font-size:.74rem; margin:0 0 1rem; text-transform:uppercase;}
+  .sc-title{
+    font-family:"Playfair Display","Noto Serif KR",serif; font-weight:700;
+    font-size:4rem; line-height:1.05; margin:0; color:var(--ivory);
+    text-shadow:0 2px 40px rgba(168,58,85,.5); letter-spacing:.02em;
+  }
+  .sc-sub{font-family:"Noto Serif KR",serif; color:#e9c9d1; font-size:1.02rem; margin:.7rem 0 0; letter-spacing:.03em;}
+  .sc-hint{color:var(--ivory-mute); font-size:.8rem; margin:.55rem 0 0; opacity:.75;}
+  .sc-hint[data-jsonly]{display:none;}
+  .sc-rule{margin:1.6rem auto 0; width:120px; height:1px; background:linear-gradient(90deg,transparent,var(--line),transparent); position:relative;}
+  .sc-rule span{position:absolute; left:50%; top:-2px; width:5px; height:5px; border-radius:50%; background:var(--wine-soft); transform:translateX(-50%); box-shadow:0 0 12px var(--wine-soft);}
+
+  .sc-content section{
+    background:var(--card);
+    backdrop-filter:blur(7px); -webkit-backdrop-filter:blur(7px);
+    border:1px solid var(--line);
+    border-radius:18px;
+    padding:1.55rem 1.75rem; margin:1.2rem 0;
+    position:relative; overflow:hidden;
+    transition:border-color .35s ease, transform .35s ease;
+  }
+  .sc-content section::before{
+    content:""; position:absolute; left:0; top:1.55rem; bottom:1.55rem; width:2px;
+    background:linear-gradient(180deg,transparent,var(--wine-soft),transparent);
+    opacity:.55;
+  }
+  .sc-content section:hover{border-color:rgba(255,255,240,.28); transform:translateY(-2px);}
+  .sc-content h2{
+    font-family:"Playfair Display","Noto Serif KR",serif; font-weight:600;
+    color:var(--ivory); font-size:1.4rem; margin:0 0 .7rem; letter-spacing:.01em;
+  }
+  .sc-content section p{margin:0; color:var(--ivory-dim);}
+  .sc-content ul{margin:.5rem 0 0; padding-left:1.15rem; list-style:none;}
+  .sc-content li{margin:.55rem 0; padding-left:.1rem;}
+  .sc-content li strong{color:#f0c8d2; font-weight:600;}
+
+  /* 대표 명소 / 문화유산 / 자연·휴식 = name+desc 리스트를 카드 그리드처럼 */
+  .sc-content #landmarks ul, .sc-content #heritage ul, .sc-content #nature ul{
+    display:grid; grid-template-columns:repeat(auto-fit,minmax(230px,1fr)); gap:.75rem; padding-left:0;
+  }
+  .sc-content #landmarks li, .sc-content #heritage li, .sc-content #nature li{
+    margin:0; padding:.85rem 1rem; border:1px solid var(--line); border-radius:12px;
+    background:rgba(128,0,32,.14);
+  }
+  .sc-content #landmarks li strong, .sc-content #heritage li strong, .sc-content #nature li strong{
+    display:block; margin-bottom:.25rem; color:var(--ivory);
+    font-family:"Playfair Display","Noto Serif KR",serif; font-size:1.02rem;
+  }
+
+  /* facts / symbols 배지형 */
+  .sc-content .facts, .sc-content .symbols{
+    list-style:none; padding:1.05rem 1.3rem; margin:.6rem 0 0;
+    background:rgba(128,0,32,.2); border:1px dashed rgba(255,255,240,.24); border-radius:14px;
+    display:flex; flex-wrap:wrap; gap:.5rem 1.9rem;
+  }
+  .sc-content .facts li, .sc-content .symbols li{margin:0;}
+  .sc-content .facts li strong, .sc-content .symbols li strong{color:var(--wine-soft);}
+
+  /* FAQ details/summary */
+  .sc-content .faq details{border-bottom:1px solid var(--line); padding:.7rem 0;}
+  .sc-content .faq details:last-child{border-bottom:none;}
+  .sc-content .faq summary{
+    cursor:pointer; font-weight:600; color:var(--ivory); list-style:none;
+    font-family:"Noto Serif KR",serif; position:relative; padding-right:1.4rem;
+  }
+  .sc-content .faq summary::-webkit-details-marker{display:none;}
+  .sc-content .faq summary::after{content:"♪"; position:absolute; right:.2rem; top:0; color:var(--wine-soft); transition:transform .3s ease;}
+  .sc-content .faq details[open] summary::after{transform:rotate(20deg) scale(1.15);}
+  .sc-content .faq details p{margin:.55rem 0 .2rem; color:var(--ivory-mute);}
+
+  .sc-content a{color:#f0a9ba; text-decoration:none; border-bottom:1px solid rgba(240,169,186,.4); text-underline-offset:3px;}
+  .sc-content a:hover{color:var(--ivory); border-bottom-color:var(--ivory);}
+  .sc-content .links ul, .sc-content #links ul{padding-left:1.15rem; list-style:disc;}
+  .sc-content .sources{font-size:.85rem; color:var(--ivory-mute);}
+  .sc-content .sources a{color:var(--ivory-mute); border:none;}
+
+  .sc-foot{
+    text-align:center; margin-top:2.8rem; color:var(--ivory-mute); font-size:.8rem;
+    border-top:1px solid var(--line); padding-top:1.5rem; letter-spacing:.02em;
+  }
+
+  @media (max-width:560px){
+    .sc-title{font-size:2.7rem;}
+    .sc-content section{padding:1.3rem 1.25rem;}
+    .sc-content #landmarks ul, .sc-content #heritage ul, .sc-content #nature ul{grid-template-columns:1fr;}
+  }
+  @media (prefers-reduced-motion:reduce){
+    #seocho-trail{display:none;}
+  }
+</style>
+
+<script>
+(function(){
+  var reduce = window.matchMedia && matchMedia('(prefers-reduced-motion:reduce)').matches;
+  // JS가 살아있음을 알림: 힌트 노출
+  var hint = document.querySelector('.sc-hint[data-jsonly]');
+  if (hint && !reduce) hint.style.display = 'block';
+  if (reduce) return;
+
+  var canvas = document.getElementById('seocho-trail');
+  if (!canvas || !canvas.getContext) return;
+  var ctx = canvas.getContext('2d');
+  var W, H, dpr = Math.min(window.devicePixelRatio || 1, 2);
+
+  function resize(){
+    W = canvas.width = Math.floor(innerWidth * dpr);
+    H = canvas.height = Math.floor(innerHeight * dpr);
+    canvas.style.width = innerWidth + 'px';
+    canvas.style.height = innerHeight + 'px';
+    ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
+  }
+  resize();
+  addEventListener('resize', resize);
+
+  var vw = function(){ return W / dpr; };
+  var vh = function(){ return H / dpr; };
+
+  // ── 선율선(trail nodes): 커서 궤적을 따라 흐르는 우아한 곡선의 앵커점 ──
+  var trail = [];
+  var TRAIL_MAX = 26;
+  // ── 파티클: 궤적에서 흩어지는 빛 입자 ──
+  var particles = [];
+  var mx = -999, my = -999, hasMouse = false, lastEmit = 0;
+
+  function onMove(x, y){
+    hasMouse = true; mx = x; my = y;
+    trail.push({ x:x, y:y, life:1 });
+    if (trail.length > TRAIL_MAX) trail.shift();
+    var now = performance.now();
+    if (now - lastEmit > 18){
+      lastEmit = now;
+      var n = 1 + (Math.random() * 2 | 0);
+      for (var i=0;i<n;i++){
+        var ang = Math.random() * Math.PI * 2;
+        var sp = 0.3 + Math.random() * 1.1;
+        particles.push({
+          x:x, y:y,
+          vx:Math.cos(ang)*sp, vy:Math.sin(ang)*sp - 0.35,
+          r:0.8 + Math.random()*2.2,
+          life:1, decay:0.008 + Math.random()*0.014,
+          wine: Math.random() < 0.4
+        });
+      }
+      if (particles.length > 340) particles.splice(0, particles.length - 340);
+    }
+  }
+
+  addEventListener('mousemove', function(e){ onMove(e.clientX, e.clientY); }, { passive:true });
+  addEventListener('touchmove', function(e){
+    if (e.touches && e.touches[0]) onMove(e.touches[0].clientX, e.touches[0].clientY);
+  }, { passive:true });
+
+  // 유휴 상태에서도 은은한 자율 선율선이 흐르도록(빈 화면 방지) — 리사주 곡선
+  var t0 = performance.now();
+  function ambient(now){
+    var t = (now - t0) / 1000;
+    var cx = vw() * 0.5, cy = vh() * 0.42;
+    var ax = Math.min(vw(), 900) * 0.34, ay = vh() * 0.26;
+    return {
+      x: cx + Math.sin(t * 0.32) * ax + Math.sin(t * 0.11) * ax * 0.25,
+      y: cy + Math.sin(t * 0.44 + 1.3) * ay
+    };
+  }
+
+  function drawTrail(){
+    if (trail.length < 2) return;
+    ctx.lineCap = 'round';
+    ctx.lineJoin = 'round';
+    // 여러 겹의 곡선으로 '선율선'의 두께/광택 표현
+    for (var pass = 0; pass < 2; pass++){
+      ctx.beginPath();
+      ctx.moveTo(trail[0].x, trail[0].y);
+      for (var i = 1; i < trail.length - 1; i++){
+        var xc = (trail[i].x + trail[i+1].x) / 2;
+        var yc = (trail[i].y + trail[i+1].y) / 2;
+        ctx.quadraticCurveTo(trail[i].x, trail[i].y, xc, yc);
+      }
+      if (pass === 0){
+        ctx.strokeStyle = 'rgba(168,58,85,0.32)';
+        ctx.lineWidth = 7;
+      } else {
+        ctx.strokeStyle = 'rgba(255,255,240,0.55)';
+        ctx.lineWidth = 1.6;
+      }
+      ctx.stroke();
+    }
+    // 궤적 위 '음표' 노드
+    for (var j = 0; j < trail.length; j++){
+      var p = trail[j];
+      var a = (j / trail.length);
+      ctx.beginPath();
+      ctx.arc(p.x, p.y, 0.6 + a * 1.8, 0, Math.PI * 2);
+      ctx.fillStyle = 'rgba(255,255,240,' + (0.15 + a * 0.35) + ')';
+      ctx.fill();
+    }
+  }
+
+  function loop(now){
+    ctx.clearRect(0, 0, vw(), vh());
+
+    // 마우스가 없으면(모바일/유휴) 자율 궤적 주입
+    if (!hasMouse || (now - lastEmit > 900)){
+      var amb = ambient(now);
+      onMove(amb.x, amb.y);
+    }
+
+    // 선율선(연결 곡선)
+    drawTrail();
+
+    // 파티클
+    for (var i = particles.length - 1; i >= 0; i--){
+      var pt = particles[i];
+      pt.x += pt.vx; pt.y += pt.vy;
+      pt.vy += 0.006;
+      pt.vx *= 0.99;
+      pt.life -= pt.decay;
+      if (pt.life <= 0){ particles.splice(i, 1); continue; }
+      ctx.beginPath();
+      ctx.arc(pt.x, pt.y, pt.r * pt.life, 0, Math.PI * 2);
+      if (pt.wine){
+        ctx.fillStyle = 'rgba(168,58,85,' + (pt.life * 0.7) + ')';
+      } else {
+        ctx.fillStyle = 'rgba(255,255,240,' + (pt.life * 0.85) + ')';
+      }
+      ctx.fill();
+    }
+
+    // 궤적 페이드(오래된 앵커 서서히 제거)
+    if (trail.length && Math.random() < 0.5) trail.shift();
+
+    requestAnimationFrame(loop);
+  }
+  requestAnimationFrame(loop);
+
+  // ── region-data를 읽어 히어로에 '상징' 한 줄을 얹는 부가 표현(선택적 향상) ──
+  // 이 렌더는       <section id="intro">
+        <h2>지역 소개</h2>
+        <p>서초구는 옛 지명 &#x27;서리풀&#x27;에서 이름을 얻은 서울 한강 이남 중앙부의 자치구로, 대법원·대검찰청·서울중앙지방법원이 한데 모인 법조타운과 삼성전자 서초사옥, 강남역 상권이 공존하는 곳입니다. 예술의전당과 국립국악원, 한국예술종합학교가 이웃해 자리 잡아 서울을 대표하는 공연·예술 클러스터를 이룹니다. 반포동과 방배동 서래마을에는 국내 최대의 프랑스인 거주 지역이 형성되어 &#x27;서울 속 작은 프랑스&#x27;로 불립니다. 면적 약 47㎢로 서울 25개 자치구 가운데 가장 넓으며, 우면산과 청계산 자락의 녹지와 반포한강공원의 수변 경관이 도심 고밀 개발지와 어우러집니다. 서초동 법조단지, 반포·잠원의 대규모 재건축 아파트, 양재 R&amp;D 벨트가 각기 다른 도시 표정을 만들어 냅니다.</p>
+      </section>
+      <section id="facts">
+        <h2>주요 통계</h2>
+        <ul class="facts">
+          <li>인구: 약 404,704명 (2022)</li>
+          <li>면적: 47 km²</li>
+          <li>신설: 1988-01-01</li>
+        </ul>
+      </section>
+      <section id="history">
+        <h2>역사</h2>
+        <p>서초라는 이름은 &#x27;서리풀&#x27;을 향찰식으로 옮긴 것으로, &#x27;서리&#x27;의 음에서 상서로울 서(瑞) 자를, &#x27;풀&#x27;의 훈에서 풀 초(草) 자를 따 붙인 지명이며 옛 문헌에는 상초(箱草)로도 기록되었습니다. 조선 시대 이 일대는 경기도 광주군과 과천군에 속한 농촌 지대였고, 태종과 순조의 능인 헌인릉이 내곡동에 조성되면서 왕실과 인연을 맺었습니다. 1963년 서울시가 한강 이남으로 크게 확장되면서 이 지역이 서울 행정구역으로 편입되었습니다. 이후 강남 개발과 함께 인구가 급증하자 1988년 1월 1일 강남구에서 분리되어 서초구가 신설되었으며, 구청 소재지인 서초동에서 구 이름을 따왔습니다. 1988년 예술의전당 음악당 개관, 1990년대 법조단지 이전, 2000년대 이후 반포·잠원 재건축을 거치며 오늘날의 모습으로 성장했습니다.</p>
+      </section>
+      <section id="geography">
+        <h2>지리·자연환경</h2>
+        <p>서초구는 서울 남부 한강 이남의 중앙에 자리하며, 동쪽으로 강남대로를 경계로 강남구와, 서쪽으로 동작대로를 사이에 두고 동작구·관악구와 접합니다. 북쪽 경계는 한강이 흐르며 용산구를 마주하고, 남쪽으로는 우면산과 청계산·인릉산 등 산악지대를 넘어 경기도 과천시와 성남시에 이릅니다. 구의 남부에는 우면산과 구룡산이, 남단에는 청계산 능선이 뻗어 서울에서도 손꼽히는 산림 녹지를 품고 있습니다. 도심을 관통하는 양재천이 우면동과 양재동을 지나 한강으로 흘러들고, 반포천은 서초동 일대를 지나 반포 앞 한강에 합류합니다. 남고북저의 지형을 이루어 남쪽 산자락에서 북쪽 한강변으로 완만히 낮아지며, 이 물길과 산세가 서초구 특유의 녹지 축을 형성합니다.</p>
+      </section>
+      <section id="characteristics">
+        <h2>지역 특징</h2>
+        <p>서초구의 인구는 2022년 기준 약 40만 명으로, 면적은 서울에서 가장 넓지만 산림 녹지 비중이 커 인구 밀도는 상대적으로 낮은 편입니다. 서초동 법조타운을 중심으로 대법원·대검찰청과 다수의 법무법인이 밀집해 국내 법률 산업의 심장부 역할을 하며, 세무·회계·특허 등 전문 서비스업이 함께 발달했습니다. 강남역 일대 관할의 절반이 서초동에 속해 대형 오피스와 학원가, 상업시설이 집중되어 있고, 양재동과 우면동에는 삼성·현대차그룹 등 대기업의 연구개발 시설이 자리해 R&amp;D 거점으로 부상했습니다. 반포동과 잠원동의 대규모 재건축 아파트 단지는 전국에서 손꼽히는 고가 주거지로 꼽히며, 방배동과 서래마을은 국제적이고 문화적인 주거·상권 색채를 띱니다. 예술의전당과 국립국악원이 있어 공연예술·문화 소비가 활발한 것도 서초구를 규정하는 특징입니다.</p>
+      </section>
+      <section id="landmarks">
+        <h2>대표 명소</h2>
+        <ul>
+          <li><strong>예술의전당</strong> — 1988년 음악당과 서예관을 시작으로 개관한 국내 대표 복합 예술센터로, 오페라하우스·콘서트홀·한가람미술관·서예박물관을 갖추고 연간 수백만 명이 찾습니다. 우면산 자락에 자리해 클래식·오페라·전시가 연중 이어지는 서초구의 문화 랜드마크입니다.</li>
+          <li><strong>서초동 법조타운</strong> — 대법원과 대검찰청, 서울중앙지방법원·서울고등법원, 서울중앙지방검찰청이 한데 모인 국내 최대 법조단지입니다. 이를 중심으로 수많은 법무법인과 법률 서비스업이 집적해 서초구를 대한민국 법률의 중심지로 만들었습니다.</li>
+          <li><strong>삼성전자 서초사옥(삼성타운)</strong> — 강남역 사거리 인근 서초대로에 들어선 초고층 마천루 단지로, 오랜 기간 삼성그룹 주요 계열사의 상징적 거점이었습니다. 강남역 상권과 맞닿아 서초구 도심의 스카이라인을 대표하는 랜드마크입니다.</li>
+          <li><strong>서울고속버스터미널·센트럴시티</strong> — 반포동에 위치한 전국 규모의 고속·시외버스 교통 관문으로, 경부선 터미널과 호남선 센트럴시티가 함께 자리합니다. 신세계백화점 강남점과 대형 상업시설이 결합해 교통과 쇼핑이 어우러진 거점입니다.</li>
+        </ul>
+      </section>
+      <section id="heritage">
+        <h2>문화유산·문화시설</h2>
+        <ul>
+          <li><strong>국립국악원</strong> — 우면산 자락 예술의전당 옆에 자리한 국악 전문 국립기관으로, 정악·민속악 등 전통음악과 궁중무용을 보존·공연·교육합니다. 우면당과 예악당 등 전용 공연장에서 국악 공연이 상시 열립니다.</li>
+          <li><strong>헌인릉</strong> — 내곡동에 있는 조선 왕릉으로, 조선 3대 태종과 원경왕후의 헌릉, 23대 순조와 순원왕후의 인릉이 함께 자리한 유네스코 세계유산 조선왕릉입니다. 울창한 숲과 능침을 따라 왕실 역사를 걷는 산책로가 조성되어 있습니다.</li>
+          <li><strong>매헌 윤봉길의사 기념관</strong> — 양재 매헌시민의숲 내에 있는 기념관으로, 상하이 훙커우공원 의거로 순국한 매헌 윤봉길 의사의 유품과 항일 독립운동 자료를 전시합니다. 의사의 호 &#x27;매헌&#x27;을 따 공원과 기념관 이름이 붙었습니다.</li>
+          <li><strong>한국예술종합학교 서초캠퍼스</strong> — 예술의전당·국립국악원과 인접한 국립 예술 특수대학으로, 음악·연극·영상·무용·미술·전통예술 원(院)을 두고 전문 예술인을 양성합니다. 서초구 예술 클러스터의 교육 축을 담당합니다.</li>
+        </ul>
+      </section>
+      <section id="nature">
+        <h2>자연·휴식</h2>
+        <ul>
+          <li><strong>반포한강공원</strong> — 한강변 반포동에 조성된 대표 수변 공원으로, 인공섬 세빛섬과 세계 최장 교량 분수인 반포대교 달빛무지개분수로 널리 알려졌습니다. 자전거길과 잔디밭, 야간 경관이 어우러져 시민들의 휴식처가 됩니다.</li>
+          <li><strong>서리풀공원과 몽마르뜨공원</strong> — 서초동·반포동·방배동에 걸친 초대형 도심 녹지로, 누에다리를 통해 서리풀공원과 몽마르뜨공원이 이어집니다. 도심 속 숲길을 걸으며 산책과 문화 여행을 즐길 수 있는 서초의 대표 녹지 축입니다.</li>
+          <li><strong>매헌시민의숲(양재시민의숲)</strong> — 1986년 우리나라 최초로 숲 개념을 도입해 조성된 공원으로, 70여 종 25만여 그루의 나무가 우거진 도심 숲입니다. 잔디광장과 체육시설, 윤봉길의사 기념관을 갖춰 사계절 시민들이 즐겨 찾습니다.</li>
+          <li><strong>우면산과 양재천 산책로</strong> — 구 남부에 솟은 우면산은 소망탑과 완만한 등산로를 갖춰 접근성이 좋은 도심 산이며, 양재천을 따라 이어지는 물가 산책로는 벚꽃길과 자전거길로 사랑받습니다. 산과 하천이 연결되는 서초구의 대표적 휴식 공간입니다.</li>
+        </ul>
+      </section>
+      <section id="transport">
+        <h2>교통</h2>
+        <p>서초구에는 서울 지하철 2·3·4·7·9호선과 신분당선이 지나며, 과천선으로 이어지는 4호선을 통해 경기 남부와도 연결됩니다. 강남역과 교대역, 서초역, 방배역, 양재역, 고속터미널역, 반포역 등 유동 인구가 많은 환승·거점역이 촘촘히 분포합니다. 특히 강남역은 2호선과 신분당선이 만나 서울에서 가장 붐비는 역 중 하나이며, 고속터미널역은 3·7·9호선이 교차하는 대형 환승역입니다. 도로는 강남대로와 동작대로가 남북을 잇고, 남부순환로와 서초대로·양재대로가 동서 교통을 담당합니다. 반포동의 서울고속버스터미널과 센트럴시티(호남선)는 전국을 잇는 광역 버스 교통의 관문 역할을 합니다. 경부고속도로 서울 기점이 양재 나들목 인근에 있어 수도권 남부로의 접근성도 뛰어납니다.</p>
+      </section>
+      <section id="symbols">
+        <h2>지역 상징</h2>
+        <ul class="symbols">
+          <li>구화(꽃): 장미</li>
+          <li>구목(나무): 느티나무</li>
+          <li>구조(새): 비둘기</li>
+        </ul>
+      </section>
+      <section id="faq">
+        <h2>자주 묻는 질문</h2>
+        <div class="faq">
+          <details>
+            <summary>서초구라는 이름은 어디서 유래했나요?</summary>
+            <p>옛 지명 &#x27;서리풀&#x27;을 향찰식으로 옮긴 것으로, &#x27;서리&#x27;의 음에서 상서로울 서(瑞) 자를, &#x27;풀&#x27;의 훈에서 풀 초(草) 자를 따 지었습니다. 구청이 있는 서초동에서 구 이름을 가져왔습니다.</p>
+          </details>
+          <details>
+            <summary>서초구는 언제 생겼나요?</summary>
+            <p>1988년 1월 1일 강남구에서 분리되어 신설되었습니다. 강남 개발로 인구가 급증하면서 별도 자치구로 분구되었습니다.</p>
+          </details>
+          <details>
+            <summary>서초구가 서울에서 가장 넓은 자치구인가요?</summary>
+            <p>네, 서초구의 면적은 약 47㎢로 서울 25개 자치구 가운데 가장 넓습니다. 우면산·청계산 등 남부 산림 녹지가 넓게 포함되어 있기 때문입니다.</p>
+          </details>
+          <details>
+            <summary>서초구를 대표하는 문화시설은 무엇인가요?</summary>
+            <p>예술의전당과 국립국악원, 한국예술종합학교가 우면산 자락에 모여 서울을 대표하는 공연·예술 클러스터를 이룹니다. 오페라·클래식·전시·국악 공연이 연중 열립니다.</p>
+          </details>
+          <details>
+            <summary>서래마을은 왜 &#x27;작은 프랑스&#x27;로 불리나요?</summary>
+            <p>반포동과 방배동에 걸친 서래마을에 국내 최대의 프랑스인 공동체가 형성되어 프랑스학교와 프랑스풍 상점·카페가 모여 있기 때문입니다. 이국적인 분위기의 카페거리로도 유명합니다.</p>
+          </details>
+          <details>
+            <summary>서초구청은 어디에 있고 어떻게 가나요?</summary>
+            <p>서초구청은 서울특별시 서초구 남부순환로 2584(서초동)에 있습니다. 지하철 2호선 서초역이나 2·3호선 교대역에서 가깝습니다.</p>
+          </details>
+        </div>
+      </section>
+      <section id="links">
+        <h2>공식 링크</h2>
+        <ul>
+          <li><a href="https://www.seocho.go.kr/" rel="noopener">서초구청 공식 홈페이지</a></li>
+          <li><a href="https://www.seocho.go.kr/site/seocho/05/10502020000002015070810.jsp" rel="noopener">서초구 위치·면적 안내</a></li>
+        </ul>
+      </section>
+      <section id="sources">
+        <h2>출처</h2>
+        <ul class="sources">
+          <li><a href="https://ko.wikipedia.org/wiki/%EC%84%9C%EC%B4%88%EA%B5%AC" rel="noopener">서초구 - 위키백과, 우리 모두의 백과사전</a> (조회 2026-07-08)</li>
+          <li><a href="https://www.seocho.go.kr/site/seocho/05/10502040100002015070810.jsp" rel="noopener">서초구의 지명유래 - 서초구청</a> (조회 2026-07-08)</li>
+          <li><a href="https://www.seocho.go.kr/site/seocho/05/10502020000002015070810.jsp" rel="noopener">서초구의 위치/면적 - 서초구청</a> (조회 2026-07-08)</li>
+          <li><a href="https://ko.wikipedia.org/wiki/%EC%84%9C%EB%9E%98%EB%A7%88%EC%9D%84" rel="noopener">서래마을 - 위키백과, 우리 모두의 백과사전</a> (조회 2026-07-08)</li>
+        </ul>
+      </section> 위의 추가 표현일 뿐, 콘텐츠 접근의 유일 수단이 아님.
+  try{
+    var raw = document.getElementById('region-data');
+    if (raw){
+      var data = JSON.parse(raw.textContent);
+      if (data && data.symbols){
+        var s = data.symbols;
+        var badge = document.createElement('p');
+        badge.className = 'sc-sub';
+        badge.style.fontSize = '.86rem';
+        badge.style.marginTop = '.35rem';
+        badge.style.color = '#d9b3bd';
+        var bits = [];
+        if (s.flower) bits.push('구화 ' + s.flower);
+        if (s.tree) bits.push('구목 ' + s.tree);
+        if (s.bird) bits.push('구조 ' + s.bird);
+        badge.textContent = bits.join('  ·  ');
+        var sub = document.querySelector('.sc-hero .sc-sub');
+        if (sub && bits.length) sub.parentNode.insertBefore(badge, sub.nextSibling);
+      }
+    }
+  }catch(e){ /* 데이터 없어도 콘텐츠는 그대로 노출 */ }
+})();
+</script>
 </body>
 </html>
